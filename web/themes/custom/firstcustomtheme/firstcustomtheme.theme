@@ -1,0 +1,7 @@
+<?php
+function firstcustomtheme_preprocess_node(array &$variables) {
+  // Add a custom Twig suggestion based on node type.
+  $node = $variables['node'];
+  $variables['theme_hook_suggestions'][] = 'node__' . $node->bundle();
+}
+?>

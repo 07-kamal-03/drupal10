@@ -1,0 +1,8 @@
+# custom_csv_export/custom_csv_export.routing.yml
+csvdownload.generate_csv:
+  path: '/generate-csv'
+  defaults:
+    _controller: '\Drupal\csvdownload\Controller\CustomCsvExportController::generateCsv'
+    _title: 'Generate CSV'
+  requirements:
+    _permission: 'access content'

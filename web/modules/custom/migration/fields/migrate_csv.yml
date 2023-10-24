@@ -1,0 +1,25 @@
+id: migrate_csv
+label: 'Migrate from CSV File'
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/custom/migration/csvfiles/emp_data.csv'
+  delimiter: ','
+  header_row_count: 1
+  keys:
+    - Emp_id
+process:
+  title: Emp_id
+  field_name: Name
+  field_dept: Dept
+  field_age: Age
+  field_native: Native
+  field_email: Email
+  type:
+    plugin: default_value
+    default_value: 'migrate_content'
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:node'

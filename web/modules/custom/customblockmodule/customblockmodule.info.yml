@@ -1,0 +1,5 @@
+name: 'customblockmodule'
+type: module
+description: 'My Custom Block'
+package: custom
+core_version_requirement: ^10

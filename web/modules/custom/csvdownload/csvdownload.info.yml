@@ -1,0 +1,5 @@
+name: 'csvdownload'
+type: module
+description: 'csv download module'
+package: custom
+core_version_requirement: ^10

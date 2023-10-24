@@ -1,0 +1,11 @@
+<?php
+function mytheme_preprocess_page(&$variables) {
+  $image_path = 'images/nature.png';
+  $variables['page']['custom_image'] = [
+    '#theme' => 'image',
+    '#uri' => $image_path,
+    '#alt' => 'sun rise',
+  ];
+}
+
+?>
